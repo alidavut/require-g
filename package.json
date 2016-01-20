@@ -1,0 +1,49 @@
+{
+  "name": "require-g",
+  "version": "0.0.7",
+  "description": "Import global modules",
+  "main": "lib/index.js",
+  "files": [
+    "lib/",
+    "register.js"
+  ],
+  "directories": {
+    "lib": "./lib"
+  },
+  "scripts": {
+    "test": "gulp lint && mocha test/src/**/*.js",
+    "prepublish": "gulp publish",
+    "postpublish": "gulp clean"
+  },
+  "keywords": [
+    "import",
+    "global",
+    "require",
+    "modules",
+    "module"
+  ],
+  "devDependencies": {
+    "babel-eslint": "^4.1.6",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-register": "^6.4.3",
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-eslint": "^1.1.1",
+    "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "which": "^1.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alidavut/require-g.git"
+  },
+  "author": "Ali Davut",
+  "license": "LGPL-3.0",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/alidavut/require-g/issues"
+  }
+}
